@@ -1,8 +1,27 @@
 # The Clean Arch Templates .NET
 
-Templates .NET para _The Clean Arch_.
+Templates _The Clean Arch_ para .NET.
 
-Todos os templates _The Clean Arch_ tem o prefixo `tca` e estão armazenadas em um diretório
-de mesmo nome em `templates/`. Abaixo você tem um catálogo dos templates disponíveis:
+Para instalar use:
 
-- `tca-basic-solution` Uma solução básica com os principais recursos
+```sh
+dotnet new install TheCleanArch.Templates::{version}
+```
+
+Para ver todos os templates disponíveis:
+
+```sh
+dotnet new list --tag TheCleanArch
+```
+
+Para conhecer os parâmetros de cada template:
+
+```sh
+dotnet new {template-name} --help
+```
+
+Exemplo de criação de uma solução com o template básico:
+
+```sh
+dotnet new tca-basic-solution -n MinhaSolucao
+```

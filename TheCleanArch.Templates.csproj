@@ -4,7 +4,6 @@
     <TargetFramework>net8.0</TargetFramework>
     <PackageId>TheCleanArch.Templates</PackageId>
     <PackageProjectUrl>https://github.com/Hibex-Solutions/TheCleanArch.Templates</PackageProjectUrl>
-    <Version>0.1.0</Version>
     <PackageVersion>$(Version)</PackageVersion>
     <Title>The Clean Arch Project .NET Templates</Title>
     <Authors>Hibex-Solutions</Authors>
@@ -35,6 +34,7 @@
 
   <ItemGroup>
     <None Include="README.md" Pack="true" PackagePath="" />
+    <None Include="TheCleanArchIcon.png" Pack="true" PackagePath="" />
   </ItemGroup>
 
 </Project>

@@ -100,7 +100,7 @@ jobs:
           fi
 
           dotnet pack -c Release /p:VersionPrefix="$version_prefix" /p:VersionSuffix="$version_suffix"  --output ./artifacts
-          dotnet nuget push ./artifacts/TheCleanArch.Templates.*.nupkg --source "$GITHUB_NUGET_SOURCE"  --api-key "${GITHUB_TOKEN}"
+          dotnet nuget push "./artifacts/TheCleanArch.Templates.$version_prefix-$version_suffix.nupkg" --source "$GITHUB_NUGET_SOURCE"  --api-key "${GITHUB_TOKEN}"
 
       - name: Publish public packages
         if: ${{ steps.version.outputs.is_released == 'true' && steps.version.outputs.is_prerelease == 'true' && steps.version.outputs.is_public == 'true' }}
@@ -123,8 +123,8 @@ jobs:
           fi
 
           dotnet pack -c Release /p:VersionPrefix="$version_prefix" /p:VersionSuffix="$version_suffix"  --output ./artifacts
-          dotnet nuget push ./artifacts/TheCleanArch.Templates.*.nupkg --source "$GITHUB_NUGET_SOURCE"  --api-key "${GITHUB_TOKEN}"
-          dotnet nuget push ./artifacts/TheCleanArch.Templates.*.nupkg --source "$NUGET_SOURCE"  --api-key "${NUGET_TOKEN}"
+          dotnet nuget push "./artifacts/TheCleanArch.Templates.$version_prefix-$version_suffix.nupkg" --source "$GITHUB_NUGET_SOURCE"  --api-key "${GITHUB_TOKEN}"
+          dotnet nuget push "./artifacts/TheCleanArch.Templates.$version_prefix-$version_suffix.nupkg" --source "$NUGET_SOURCE"  --api-key "${NUGET_TOKEN}"
 
       - name: Release packages
         if: ${{ steps.version.outputs.is_released == 'true' && steps.version.outputs.is_prerelease == 'false' && steps.version.outputs.is_public == 'true' }}
@@ -132,5 +132,5 @@ jobs:
           full_semver=$(dotnet gitversion /output json /showvariable FullSemVer)
 
           dotnet pack -c Release /p:Version="$full_semver" --output ./artifacts
-          dotnet nuget push ./artifacts/TheCleanArch.Templates.*.nupkg --source "$GITHUB_NUGET_SOURCE"  --api-key "${GITHUB_TOKEN}"
-          dotnet nuget push ./artifacts/TheCleanArch.Templates.*.nupkg --source "$NUGET_SOURCE"  --api-key "${NUGET_TOKEN}"
+          dotnet nuget push "./artifacts/TheCleanArch.Templates.$full_semver.nupkg" --source "$GITHUB_NUGET_SOURCE"  --api-key "${GITHUB_TOKEN}"
+          dotnet nuget push "./artifacts/TheCleanArch.Templates.$full_semver.nupkg" --source "$NUGET_SOURCE"  --api-key "${NUGET_TOKEN}"

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="TheCleanArch.InterfaceAdapter" Version="0.1.0-rc0006" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TheCleanArch.Templates.BasicSolution.EFCoreStorage\TheCleanArch.Templates.BasicSolution.EFCoreStorage.csproj" />
+    <ProjectReference Include="..\TheCleanArch.Templates.BasicSolution\TheCleanArch.Templates.BasicSolution.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,151 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "@TheCleanArch",
+  "classifications": ["TheCleanArch", "Hibex-Solutions", "Solution"],
+  "name": "Solução básica The Clean Arch",
+  "description": "Diretório de solução com recursos básicos The Clean Arch",
+  "identity": "TheCleanArch.Templates.BasicSolution",
+  "shortName": "tca-basic-solution",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "sourceName": "TheCleanArch.Templates.BasicSolution",
+  "preferNameDirectory": true,
+  "symbols": {
+    "LicenseId": {
+      "type": "parameter",
+      "displayName": "License Id",
+      "datatype": "choice",
+      "defaultValue": "private",
+      "choices": [
+        {
+          "choice": "private",
+          "description": "Private"
+        },
+        {
+          "choice": "apache-2.0",
+          "description": "Apache License 2.0"
+        },
+        {
+          "choice": "agpl-3.0",
+          "description": "GNU Affero General Public License v3.0"
+        },
+        {
+          "choice": "gpl-3.0",
+          "description": "GNU General Public License v3.0"
+        },
+        {
+          "choice": "lgpl-3.0",
+          "description": "GNU Lesser General Public License v3.0"
+        },
+        {
+          "choice": "mpl-2.0",
+          "description": "Mozilla Public License 2.0"
+        },
+        {
+          "choice": "mit",
+          "description": "MIT License"
+        },
+        {
+          "choice": "bsl-1.0",
+          "description": "Boost Software License 1.0"
+        },
+        {
+          "choice": "unlicense",
+          "description": "The Unlicense"
+        }
+      ]
+    },
+    "LicenseIsPrivate": {
+      "type": "computed",
+      "value": "(LicenseId == 'private')"
+    }
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "condition": "(LicenseId != 'agpl-3.0')",
+          "exclude": ["LICENSE.agpl-3.0.txt"]
+        },
+        {
+          "condition": "(LicenseId != 'apache-2.0')",
+          "exclude": ["LICENSE.apache-2.0.txt"]
+        },
+        {
+          "condition": "(LicenseId != 'bsl-1.0')",
+          "exclude": ["LICENSE.bsl-1.0.txt"]
+        },
+        {
+          "condition": "(LicenseId != 'gpl-3.0')",
+          "exclude": ["LICENSE.gpl-3.0.txt"]
+        },
+        {
+          "condition": "(LicenseId != 'lgpl-3.0')",
+          "exclude": ["LICENSE.lgpl-3.0.txt"]
+        },
+        {
+          "condition": "(LicenseId != 'mit')",
+          "exclude": ["LICENSE.mit.txt"]
+        },
+        {
+          "condition": "(LicenseId != 'mpl-2.0')",
+          "exclude": ["LICENSE.mpl-2.0.txt"]
+        },
+        {
+          "condition": "(LicenseId != 'unlicense')",
+          "exclude": ["LICENSE.unlicense.txt"]
+        },
+        {
+          "condition": "(LicenseId == 'agpl-3.0')",
+          "rename": {
+            "LICENSE.agpl-3.0.txt": "LICENSE"
+          }
+        },
+        {
+          "condition": "(LicenseId == 'apache-2.0')",
+          "rename": {
+            "LICENSE.apache-2.0.txt": "LICENSE"
+          }
+        },
+        {
+          "condition": "(LicenseId == 'bsl-1.0')",
+          "rename": {
+            "LICENSE.bsl-1.0.txt": "LICENSE"
+          }
+        },
+        {
+          "condition": "(LicenseId == 'gpl-3.0')",
+          "rename": {
+            "LICENSE.gpl-3.0.txt": "LICENSE"
+          }
+        },
+        {
+          "condition": "(LicenseId == 'lgpl-3.0')",
+          "rename": {
+            "LICENSE.lgpl-3.0.txt": "LICENSE"
+          }
+        },
+        {
+          "condition": "(LicenseId == 'mit')",
+          "rename": {
+            "LICENSE.mit.txt": "LICENSE"
+          }
+        },
+        {
+          "condition": "(LicenseId == 'mpl-2.0')",
+          "rename": {
+            "LICENSE.mpl-2.0.txt": "LICENSE"
+          }
+        },
+        {
+          "condition": "(LicenseId == 'unlicense')",
+          "rename": {
+            "LICENSE.unlicense.txt": "LICENSE"
+          }
+        }
+      ]
+    }
+  ]
+}

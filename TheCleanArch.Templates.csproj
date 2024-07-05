@@ -20,9 +20,7 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <OutputPath>$(SolutionDir)artifacts</OutputPath>
-  </PropertyGroup>
-
-  <PropertyGroup>
+    <PackageIcon>TheCleanArchIcon.png</PackageIcon>
     <LocalizeTemplates>false</LocalizeTemplates>
   </PropertyGroup>
 

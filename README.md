@@ -2,26 +2,21 @@
 
 Templates _The Clean Arch_ para .NET.
 
-Para instalar use:
-
+1. Instale.
 ```sh
-dotnet new install TheCleanArch.Templates::{version}
+dotnet new install TheCleanArch.Templates
 ```
 
-Para ver todos os templates disponíveis:
-
+2. Confira todos os templates disponíveis
 ```sh
 dotnet new list --tag TheCleanArch
 ```
 
-Para conhecer os parâmetros de cada template:
-
+3. Aprenda sobre os parâmetros de cada um
 ```sh
 dotnet new {template-name} --help
 ```
 
-Exemplo de criação de uma solução com o template básico:
+4. Crie usando nossos templates.
 
-```sh
-dotnet new tca-basic-solution -n MinhaSolucao
-```
+Aprenda sobre _The Clean Arch_ em https://github.com/Hibex-Solutions/TheCleanArch.

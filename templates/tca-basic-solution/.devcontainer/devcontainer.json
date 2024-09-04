@@ -2,6 +2,7 @@
     "name": "TheCleanArch.Templates.BasicSolution",
     "service": "devenv",
     "dockerComposeFile": "compose.yml",
+    "remoteUser": "devenv",
     "workspaceFolder": "/TheCleanArch.Templates.BasicSolution",
     "postStartCommand": "git config core.autocrlf true && dotnet tool restore && (dotnet restore ||:)",
     "customizations": {

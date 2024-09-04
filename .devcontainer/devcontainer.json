@@ -1,0 +1,21 @@
+{
+    "name": "thecleanarch-templates",
+    "service": "devenv",
+    "dockerComposeFile": "compose.yml",
+    "workspaceFolder": "/thecleanarch-templates",
+    "postStartCommand": "git config core.autocrlf true && dotnet tool restore && (dotnet restore ||:)",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "editor.formatOnPaste": true,
+                "editor.formatOnSave": true
+            },
+            "extensions": [
+                "ms-azuretools.vscode-docker",
+                "ms-dotnettools.csdevkit",
+                "ms-dotnettools.vscodeintellicode-csharp",
+                "EditorConfig.EditorConfig"
+            ]
+        }
+    }
+}

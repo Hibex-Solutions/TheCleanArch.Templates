@@ -2,13 +2,13 @@
     "name": "thecleanarch-templates",
     "service": "devenv",
     "dockerComposeFile": "compose.yml",
-    "workspaceFolder": "/thecleanarch-templates",
-    "postStartCommand": "git config core.autocrlf true && dotnet tool restore && (dotnet restore ||:)",
+    "remoteUser": "tcadev",
+    "workspaceFolder": "/TheCleanArch.Templates",
+    "postStartCommand": ". .devcontainer/postStartCommand.sh",
     "customizations": {
         "vscode": {
             "settings": {
-                "editor.formatOnPaste": true,
-                "editor.formatOnSave": true
+                "terminal.integrated.defaultProfile.linux": "bash"
             },
             "extensions": [
                 "ms-azuretools.vscode-docker",

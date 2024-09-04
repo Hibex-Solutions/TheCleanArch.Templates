@@ -4,6 +4,7 @@ services:
       context: .
       args:
         - SDK_VERSION=8.0
+        - USERNAME=tcadev
     volumes:
-      - ..:/thecleanarch-templates
+      - ..:/TheCleanArch.Templates
     command: sleep infinity

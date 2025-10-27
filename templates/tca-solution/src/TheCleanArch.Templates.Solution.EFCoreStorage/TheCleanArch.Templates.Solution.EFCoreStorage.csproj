@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TheCleanArch.Templates.Solution\TheCleanArch.Templates.Solution.csproj" />
+    <ProjectReference Include="..\TheCleanArch.Templates.Solution.Application\TheCleanArch.Templates.Solution.Application.csproj" />
   </ItemGroup>
 
 </Project>

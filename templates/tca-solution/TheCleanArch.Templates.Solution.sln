@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{96506072-79E3-47A2-9FD6-D86EA7EA0170}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCleanArch.Templates.Solution", "src\TheCleanArch.Templates.Solution\TheCleanArch.Templates.Solution.csproj", "{413BCF89-F6E6-4177-A01B-7CE1FB559878}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCleanArch.Templates.Solution.Application", "src\TheCleanArch.Templates.Solution.Application\TheCleanArch.Templates.Solution.Application.csproj", "{413BCF89-F6E6-4177-A01B-7CE1FB559878}"
 EndProject
 // #if (UseDomainDrivenDesign)
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCleanArch.Templates.Solution.Domain", "src\TheCleanArch.Templates.Solution.Domain\TheCleanArch.Templates.Solution.Domain.csproj", "{8B658CEA-820A-40AF-BE0F-F8C270C3299A}"
@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCleanArch.Templates.Solu
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D5026F1F-7E88-4E26-85EF-F9E37120BEDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCleanArch.Templates.SolutionTests", "test\TheCleanArch.Templates.SolutionTests\TheCleanArch.Templates.SolutionTests.csproj", "{4BAA8EF8-0B9C-49BC-873D-4D07FA5604DD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCleanArch.Templates.Solution.ApplicationTests", "test\TheCleanArch.Templates.Solution.ApplicationTests\TheCleanArch.Templates.Solution.ApplicationTests.csproj", "{4BAA8EF8-0B9C-49BC-873D-4D07FA5604DD}"
 EndProject
 // #if (UseDomainDrivenDesign)
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCleanArch.Templates.Solution.DomainTests", "test\TheCleanArch.Templates.Solution.DomainTests\TheCleanArch.Templates.Solution.DomainTests.csproj", "{5AABEAF3-1E05-4E3C-B593-AC7C662EEE13}"

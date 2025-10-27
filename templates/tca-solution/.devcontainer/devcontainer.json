@@ -1,9 +1,9 @@
 {
-    "name": "TheCleanArch.Templates.BasicSolution",
+    "name": "TheCleanArch.Templates.Solution",
     "service": "devenv",
     "dockerComposeFile": "compose.yml",
     "remoteUser": "devenv",
-    "workspaceFolder": "/TheCleanArch.Templates.BasicSolution",
+    "workspaceFolder": "/TheCleanArch.Templates.Solution",
     "postStartCommand": ". .devcontainer/postStartCommand.sh",
     "customizations": {
         "vscode": {

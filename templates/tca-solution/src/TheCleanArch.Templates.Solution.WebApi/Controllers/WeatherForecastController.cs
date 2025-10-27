@@ -1,11 +1,11 @@
-// Copyright (c) TheCleanArch.Templates.BasicSolution Team. All rights reserved.
+// Copyright (c) TheCleanArch.Templates.Solution Team. All rights reserved.
 #if (LicenseIsPrivate)
-// This file is part of TheCleanArch.Templates.BasicSolution and is private code.
+// This file is part of TheCleanArch.Templates.Solution and is private code.
 #else
-// This file is part of TheCleanArch.Templates.BasicSolution and is licensed under the terms described in the LICENSE file.
+// This file is part of TheCleanArch.Templates.Solution and is licensed under the terms described in the LICENSE file.
 #endif
 
-namespace TheCleanArch.Templates.BasicSolution.WebApi.Controllers;
+namespace TheCleanArch.Templates.Solution.WebApi.Controllers;
 
 [ApiController]
 [Route("[controller]")]

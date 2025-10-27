@@ -1,6 +1,6 @@
 <Project>
     <PropertyGroup>
-        <Product>TheCleanArch.Templates.BasicSolution</Product>
+        <Product>TheCleanArch.Templates.Solution</Product>
         <AnalysisLevel>8.0-recommended</AnalysisLevel>
         <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
         <ImplicitUsings>disable</ImplicitUsings>

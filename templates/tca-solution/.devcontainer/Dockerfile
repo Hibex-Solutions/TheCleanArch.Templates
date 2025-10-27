@@ -3,7 +3,7 @@ ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 ARG SDK_VERSION="8.0"
 FROM mcr.microsoft.com/dotnet/sdk:${SDK_VERSION}
-WORKDIR /TheCleanArch.Templates.BasicSolution
+WORKDIR /TheCleanArch.Templates.Solution
 
 ARG USERNAME
 ARG USER_UID

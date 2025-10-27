@@ -4,13 +4,13 @@
   "classifications": ["TheCleanArch", "Hibex-Solutions", "Solution"],
   "name": "TheCleanArch Solution",
   "description": "Diretório de solução com recursos básicos The Clean Arch",
-  "identity": "TheCleanArch.Templates.BasicSolution",
+  "identity": "TheCleanArch.Templates.Solution",
   "shortName": "tca-solution",
   "tags": {
     "language": "C#",
     "type": "solution"
   },
-  "sourceName": "TheCleanArch.Templates.BasicSolution",
+  "sourceName": "TheCleanArch.Templates.Solution",
   "preferNameDirectory": true,
   "symbols": {
     "LicenseId": {
@@ -173,8 +173,8 @@
         {
           "condition": "(!UseDomainDrivenDesign)",
           "exclude": [
-            "src/TheCleanArch.Templates.BasicSolution.Domain/**",
-            "test/TheCleanArch.Templates.BasicSolution.DomainTests/**"
+            "src/TheCleanArch.Templates.Solution.Domain/**",
+            "test/TheCleanArch.Templates.Solution.DomainTests/**"
           ]
         },
         {

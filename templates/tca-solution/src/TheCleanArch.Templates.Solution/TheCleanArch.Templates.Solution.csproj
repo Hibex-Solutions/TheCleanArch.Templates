@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup Condition=" '$(UseDomainDrivenDesign)' == 'true' ">
-    <ProjectReference Include="..\TheCleanArch.Templates.BasicSolution.Domain\TheCleanArch.Templates.BasicSolution.Domain.csproj" />
+    <ProjectReference Include="..\TheCleanArch.Templates.Solution.Domain\TheCleanArch.Templates.Solution.Domain.csproj" />
   </ItemGroup>
 
 </Project>

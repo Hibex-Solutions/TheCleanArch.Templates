@@ -5,5 +5,5 @@ services:
       args:
         - SDK_VERSION=8.0
     volumes:
-      - ..:/TheCleanArch.Templates.BasicSolution
+      - ..:/TheCleanArch.Templates.Solution
     command: sleep infinity

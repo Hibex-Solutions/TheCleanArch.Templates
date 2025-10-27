@@ -28,9 +28,9 @@ insert_final_newline = false
 dotnet_separate_import_directive_groups = true
 dotnet_sort_system_directives_first = true
 #if (LicenseId == 'private')
-file_header_template = Copyright (c) TheCleanArch.Templates.BasicSolution Team. All rights reserved.\nThis file is part of TheCleanArch.Templates.BasicSolution and is private code.
+file_header_template = Copyright (c) TheCleanArch.Templates.Solution Team. All rights reserved.\nThis file is part of TheCleanArch.Templates.Solution and is private code.
 #else
-file_header_template = Copyright (c) TheCleanArch.Templates.BasicSolution Team. All rights reserved.\nThis file is part of TheCleanArch.Templates.BasicSolution and is licensed under the terms described in the LICENSE file.
+file_header_template = Copyright (c) TheCleanArch.Templates.Solution Team. All rights reserved.\nThis file is part of TheCleanArch.Templates.Solution and is licensed under the terms described in the LICENSE file.
 #endif
 
 # this. and Me. preferences

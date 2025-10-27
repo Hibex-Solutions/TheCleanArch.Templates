@@ -60,6 +60,20 @@
     "LicenseIsPrivate": {
       "type": "computed",
       "value": "(LicenseId == 'private')"
+    },
+    "UseDevContainers": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false",
+      "displayName": "Use Development Containers",
+      "description": "If true, config files for Development Containers will be included in the solution."
+    },
+    "UseDomainDrivenDesign": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false",
+      "displayName": "Use Domain-Driven Design (DDD) architectural pattern",
+      "description": "If true, the solution will be structured following the Domain-Driven Design (DDD) principles."
     }
   },
   "sources": [
@@ -144,6 +158,17 @@
           "rename": {
             "LICENSE.unlicense.txt": "LICENSE"
           }
+        },
+        {
+          "condition": "(!UseDevContainers)",
+          "exclude": [".devcontainer/**" ]
+        },
+        {
+          "condition": "(!UseDomainDrivenDesign)",
+          "exclude": [
+            "src/TheCleanArch.Templates.BasicSolution.Domain/**",
+            "test/TheCleanArch.Templates.BasicSolution.DomainTests/**"
+          ]
         }
       ]
     }

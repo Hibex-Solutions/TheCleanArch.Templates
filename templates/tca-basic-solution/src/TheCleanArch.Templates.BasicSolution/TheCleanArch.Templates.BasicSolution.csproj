@@ -8,7 +8,7 @@
     <PackageReference Include="TheCleanArch.Application" Version="0.1.0-rc0006" />
   </ItemGroup>
 
-  <ItemGroup>
+  <ItemGroup Condition=" '$(UseDomainDrivenDesign)' == 'true' ">
     <ProjectReference Include="..\TheCleanArch.Templates.BasicSolution.Domain\TheCleanArch.Templates.BasicSolution.Domain.csproj" />
   </ItemGroup>
 

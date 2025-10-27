@@ -2,10 +2,10 @@
   "$schema": "http://json.schemastore.org/template",
   "author": "@TheCleanArch",
   "classifications": ["TheCleanArch", "Hibex-Solutions", "Solution"],
-  "name": "Solução básica The Clean Arch",
+  "name": "TheCleanArch Solution",
   "description": "Diretório de solução com recursos básicos The Clean Arch",
   "identity": "TheCleanArch.Templates.BasicSolution",
-  "shortName": "tca-basic-solution",
+  "shortName": "tca-solution",
   "tags": {
     "language": "C#",
     "type": "solution"

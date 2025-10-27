@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\TheCleanArch.Templates.Solution.Domain\TheCleanArch.Templates.Solution.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Application\TheCleanArch.Templates.Solution.Application.csproj" />
   </ItemGroup>
 
 </Project>

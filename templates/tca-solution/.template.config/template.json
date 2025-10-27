@@ -173,8 +173,8 @@
         {
           "condition": "(!UseDomainDrivenDesign)",
           "exclude": [
-            "src/TheCleanArch.Templates.Solution.Domain/**",
-            "test/TheCleanArch.Templates.Solution.DomainTests/**"
+            "src/Domain/**",
+            "test/DomainTests/**"
           ]
         },
         {

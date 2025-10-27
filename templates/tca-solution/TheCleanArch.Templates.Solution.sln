@@ -5,25 +5,25 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{96506072-79E3-47A2-9FD6-D86EA7EA0170}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCleanArch.Templates.Solution.Application", "src\TheCleanArch.Templates.Solution.Application\TheCleanArch.Templates.Solution.Application.csproj", "{413BCF89-F6E6-4177-A01B-7CE1FB559878}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\Application\TheCleanArch.Templates.Solution.Application.csproj", "{413BCF89-F6E6-4177-A01B-7CE1FB559878}"
 EndProject
 // #if (UseDomainDrivenDesign)
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCleanArch.Templates.Solution.Domain", "src\TheCleanArch.Templates.Solution.Domain\TheCleanArch.Templates.Solution.Domain.csproj", "{8B658CEA-820A-40AF-BE0F-F8C270C3299A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Domain\TheCleanArch.Templates.Solution.Domain.csproj", "{8B658CEA-820A-40AF-BE0F-F8C270C3299A}"
 EndProject
 // #endif
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCleanArch.Templates.Solution.EFCoreStorage", "src\TheCleanArch.Templates.Solution.EFCoreStorage\TheCleanArch.Templates.Solution.EFCoreStorage.csproj", "{D52E2EC9-8CA8-4375-B6DF-A29D5060934A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAdapter", "src\DataAdapter\TheCleanArch.Templates.Solution.DataAdapter.csproj", "{D52E2EC9-8CA8-4375-B6DF-A29D5060934A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCleanArch.Templates.Solution.WebApi", "src\TheCleanArch.Templates.Solution.WebApi\TheCleanArch.Templates.Solution.WebApi.csproj", "{CDD5B309-9ED3-4A7F-B34B-300ECDC3E9D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "src\WebApi\TheCleanArch.Templates.Solution.WebApi.csproj", "{CDD5B309-9ED3-4A7F-B34B-300ECDC3E9D7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D5026F1F-7E88-4E26-85EF-F9E37120BEDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCleanArch.Templates.Solution.ApplicationTests", "test\TheCleanArch.Templates.Solution.ApplicationTests\TheCleanArch.Templates.Solution.ApplicationTests.csproj", "{4BAA8EF8-0B9C-49BC-873D-4D07FA5604DD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationTests", "test\ApplicationTests\TheCleanArch.Templates.Solution.ApplicationTests.csproj", "{4BAA8EF8-0B9C-49BC-873D-4D07FA5604DD}"
 EndProject
 // #if (UseDomainDrivenDesign)
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCleanArch.Templates.Solution.DomainTests", "test\TheCleanArch.Templates.Solution.DomainTests\TheCleanArch.Templates.Solution.DomainTests.csproj", "{5AABEAF3-1E05-4E3C-B593-AC7C662EEE13}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainTests", "test\DomainTests\TheCleanArch.Templates.Solution.DomainTests.csproj", "{5AABEAF3-1E05-4E3C-B593-AC7C662EEE13}"
 EndProject
 // #endif
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCleanArch.Templates.Solution.WebApiTests", "test\TheCleanArch.Templates.Solution.WebApiTests\TheCleanArch.Templates.Solution.WebApiTests.csproj", "{E62F77B8-14CA-449A-9D2B-094D04F9E1B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiTests", "test\WebApiTests\TheCleanArch.Templates.Solution.WebApiTests.csproj", "{E62F77B8-14CA-449A-9D2B-094D04F9E1B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

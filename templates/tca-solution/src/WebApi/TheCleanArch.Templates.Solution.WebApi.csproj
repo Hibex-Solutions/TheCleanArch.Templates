@@ -10,8 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TheCleanArch.Templates.Solution.EFCoreStorage\TheCleanArch.Templates.Solution.EFCoreStorage.csproj" />
-    <ProjectReference Include="..\TheCleanArch.Templates.Solution.Application\TheCleanArch.Templates.Solution.Application.csproj" />
+    <ProjectReference Include="..\DataAdapter\TheCleanArch.Templates.Solution.DataAdapter.csproj" />
+    <ProjectReference Include="..\Application\TheCleanArch.Templates.Solution.Application.csproj" />
   </ItemGroup>
 
 </Project>

@@ -74,6 +74,13 @@
       "defaultValue": "false",
       "displayName": "Use Domain-Driven Design (DDD) architectural pattern",
       "description": "If true, the solution will be structured following the Domain-Driven Design (DDD) principles."
+    },
+    "EnableOmnisharpExtensions": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false",
+      "displayName": "Enable OmniSharp Extensions",
+      "description": "If true, OmniSharp Extensions will be enabled in the generated projects."
     }
   },
   "sources": [
@@ -168,6 +175,12 @@
           "exclude": [
             "src/TheCleanArch.Templates.BasicSolution.Domain/**",
             "test/TheCleanArch.Templates.BasicSolution.DomainTests/**"
+          ]
+        },
+        {
+          "condition": "(!EnableOmnisharpExtensions)",
+          "exclude": [
+            "omnisharp.json"
           ]
         }
       ]

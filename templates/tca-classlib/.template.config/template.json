@@ -12,7 +12,7 @@
   "shortName": "tca-classlib",
   "tags": {
     "language": "C#",
-    "type": "library"
+    "type": "project"
   },
   "sourceName": "TheCleanArch.Templates.ClassLibrary",
   "preferNameDirectory": true,

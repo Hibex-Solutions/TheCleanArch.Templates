@@ -8,3 +8,9 @@ global using System.Threading.Tasks;
 
 global using TheCleanArch.Core;
 global using TheCleanArch.Core.Patterns.GuardClauses;
+
+global using TUnit;
+global using TUnit.Assertions;
+global using TUnit.Assertions.Extensions;
+
+global using Moq;

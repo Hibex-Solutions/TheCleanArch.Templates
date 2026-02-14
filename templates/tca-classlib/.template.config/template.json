@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "@TheCleanArch",
+  "classifications": [
+    "TheCleanArch",
+    "Hibex-Solutions",
+    "Library"
+  ],
+  "name": "TheCleanArch Library",
+  "description": "Biblioteca de classes no padrão TheCleanArch",
+  "identity": "TheCleanArch.Templates.ClassLibrary",
+  "shortName": "tca-classlib",
+  "tags": {
+    "language": "C#",
+    "type": "library"
+  },
+  "sourceName": "TheCleanArch.Templates.ClassLibrary",
+  "preferNameDirectory": true,
+  "symbols": {
+    "Layer": {
+      "type": "parameter",
+      "displayName": "Architecture Layer",
+      "datatype": "choice",
+      "defaultValue": "external",
+      "choices": [
+        {
+          "choice": "enterprise",
+          "description": "Enterprise"
+        },
+        {
+          "choice": "application",
+          "description": "Application"
+        },
+        {
+          "choice": "interfaceadapter",
+          "description": "InterfaceAdapter"
+        },
+        {
+          "choice": "external",
+          "description": "External"
+        }
+      ]
+    },
+    "LayerIsEnterprise": {
+      "type": "computed",
+      "value": "(Layer == 'enterprise')"
+    },
+    "LayerIsApplication": {
+      "type": "computed",
+      "value": "(Layer == 'application')"
+    },
+    "LayerIsInterfaceAdapter": {
+      "type": "computed",
+      "value": "(Layer == 'interfaceadapter')"
+    },
+    "LayerIsExternal": {
+      "type": "computed",
+      "value": "(Layer == 'external')"
+    }
+  }
+}

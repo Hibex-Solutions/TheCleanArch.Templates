@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "@TheCleanArch",
+  "classifications": [
+    "TheCleanArch",
+    "Hibex-Solutions",
+    "Web",
+    "Web App",
+    "Blazor",
+    "WebAssembly"
+  ],
+  "name": "TheCleanArch Web Application",
+  "description": "Projeto de Web Application nos padrões TheCleanArch",
+  "identity": "TheCleanArch.Templates.WebApp",
+  "shortName": "tca-webapp",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "TheCleanArch.Templates.WebApp",
+  "preferNameDirectory": true,
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": [
+            "UPDATE.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

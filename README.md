@@ -1,25 +1,44 @@
 # The Clean Arch Templates .NET
 
-Templates _The Clean Arch_ para .NET.
+Modelos para projetos _.NET_ baseados em [_TheCleanArch_][THECLEANARCH].
 
-1. Instale.
+Você pode aprender em https://hibex-solutions.github.io/TheCleanArch/.
+
+## Início rápido
+
+Instale os modelos:
 ```sh
 dotnet new install TheCleanArch.Templates
 ```
 
-2. Confira todos os templates disponíveis
+Você pode conferir todos nossos modelos disponíveis assim:
 ```sh
 dotnet new list --tag TheCleanArch
 ```
 
-3. Aprenda sobre os parâmetros de cada um
+Se quiser aprender mais sobre cada um:
 ```sh
 dotnet new {template-name} --help
 ```
 
-4. Crie usando nossos templates.
+Agora basta criar seus projetos usando os modelos:
+```sh
+dotnet new {template-name} [...parâmetros]
+```
 
-Aprenda sobre _The Clean Arch_ em https://github.com/Hibex-Solutions/TheCleanArch.
+## Desenvolvendo
+
+Instale os modelos localmente:
+```sh
+dotnet new install .
+```
+
+Todos os comandos para obter ajuda e listar os modelos do início rápido se aplicam aqui.
+
+Sempre que quiser desinstale-os:
+```sh
+dotnet new uninstall .
+```
 
 ## Desenvolvendo com DevContainer
 
@@ -29,3 +48,8 @@ Aprenda sobre _The Clean Arch_ em https://github.com/Hibex-Solutions/TheCleanArc
 ```sh
 ssh-add $HOME/.ssh/{sua_chave}
 ```
+
+
+<!-- links -->
+
+[THECLEANARCH]: https://github.com/Hibex-Solutions/TheCleanArch

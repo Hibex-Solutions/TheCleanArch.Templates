@@ -1,5 +1,6 @@
-namespace TheCleanArch.Templates.UnitTest;
+namespace TheCleanArch.Templates.UnitTest.Samples;
 
+[Skip("Esses testes são apenas para fins de demonstração e por isso estão sendo ignorados.")]
 public class ArgumentSampleTest
 {
     /// <summary>

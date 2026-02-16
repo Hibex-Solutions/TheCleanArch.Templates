@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <UserSecretsId>TheCleanArch.Templates.WorkerService-72b7e470-6031-4880-831c-ec711a25ccbd</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.3" />
+    <PackageReference Include="TheCleanArch.InterfaceAdapter" Version="0.1.0-rc*" />
+  </ItemGroup>
+</Project>

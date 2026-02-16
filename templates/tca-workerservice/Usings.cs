@@ -7,8 +7,12 @@ global using System.Linq;
 global using System.Threading;
 global using System.Threading.Tasks;
 
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Hosting;
+global using Microsoft.Extensions.Logging;
+
 global using TheCleanArch.Core;
 global using TheCleanArch.Core.Patterns.GuardClauses;
 
-global using TheCleanArch.Templates.ClassLibrary;
-
+global using TheCleanArch.Templates.WorkerService;

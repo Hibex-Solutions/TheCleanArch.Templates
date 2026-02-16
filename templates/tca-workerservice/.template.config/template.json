@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "@TheCleanArch",
+  "classifications": [
+    "TheCleanArch",
+    "Hibex-Solutions",
+    "Worker",
+    "Web"
+  ],
+  "name": "TheCleanArch Worker Service",
+  "description": "Projeto de Worker Service nos padrões TheCleanArch",
+  "identity": "TheCleanArch.Templates.WorkerService",
+  "shortName": "tca-workerservice",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "TheCleanArch.Templates.WorkerService",
+  "preferNameDirectory": true,
+  "guids": [
+    "72b7e470-6031-4880-831c-ec711a25ccbd"
+  ],
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": [
+            "UPDATE.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -2,6 +2,7 @@
 
 global using System;
 global using System.Collections.Generic;
+global using System.IO;
 global using System.Linq;
 global using System.Threading;
 global using System.Threading.Tasks;
@@ -30,4 +31,3 @@ global using TheCleanArch.Core.Patterns.GuardClauses;
 global using TheCleanArch.Templates.WebApp;
 global using TheCleanArch.Templates.WebApp.Components;
 global using TheCleanArch.Templates.WebApp.Components.Layout;
-

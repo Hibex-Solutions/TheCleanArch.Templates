@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "@TheCleanArch",
+  "classifications": [
+    "TheCleanArch",
+    "Hibex-Solutions",
+    "Console",
+    "CLI"
+  ],
+  "name": "TheCleanArch CLI Application",
+  "description": "Projeto de CLI Application nos padrões TheCleanArch",
+  "identity": "TheCleanArch.Templates.CliApp",
+  "shortName": "tca-cliapp",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "TheCleanArch.Templates.CliApp",
+  "preferNameDirectory": true,
+  "guids": [
+    "72b7e470-6031-4880-831c-ec711a25ccbd"
+  ],
+  "symbols": {
+    "ExeName": {
+      "type": "parameter",
+      "displayName": "Executable Name",
+      "datatype": "text",
+      "isRequired": true,
+      "replaces": "THECLEANARCH_TEMPLATES_CLIAPP_EXE"
+    }
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": [
+            "UPDATE.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

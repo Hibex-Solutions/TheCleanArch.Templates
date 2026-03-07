@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "@TheCleanArch",
+  "classifications": [
+    "TheCleanArch",
+    "Hibex-Solutions",
+    "Solution"
+  ],
+  "name": "TheCleanArch Solution",
+  "description": "Diretório de esqueleto para solução TheCleanArch",
+  "identity": "TheCleanArch.Templates.Skeleton",
+  "shortName": "tca-skeleton",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "sourceName": "TheCleanArch.Templates.Skeleton",
+  "preferNameDirectory": true,
+  "symbols": {
+    "WithoutDevContainers": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false",
+      "displayName": "Disable Development Containers",
+      "description": "If true, config files for Development Containers will be excluded from the solution."
+    },
+    "WithoutOmnisharp": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false",
+      "displayName": "Disable OmniSharp Extensions",
+      "description": "If true, OmniSharp Extensions will be disabled in the generated projects."
+    }
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "condition": "(WithoutDevContainers)",
+          "exclude": [
+            ".devcontainer/**"
+          ]
+        },
+        {
+          "condition": "(WithoutOmnisharp)",
+          "exclude": [
+            "omnisharp.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

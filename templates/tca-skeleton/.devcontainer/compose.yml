@@ -1,0 +1,9 @@
+services:
+  devenv:
+    build:
+      context: .
+      args:
+        - SDK_VERSION=10.0
+    volumes:
+      - ..:/TheCleanArch.Templates.Skeleton:cached
+    command: sleep infinity
